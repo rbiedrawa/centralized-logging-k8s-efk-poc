@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: spring-k8s-efk-poc
+  labels:
+    name: spring-k8s-efk-poc

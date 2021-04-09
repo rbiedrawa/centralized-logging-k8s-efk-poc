@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: spring-k8s-efk-poc
+  name: spring-k8s-efk-poc
+  namespace: spring-k8s-efk-poc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-k8s-efk-poc
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: spring-k8s-efk-poc
+    spec:
+      containers:
+      - image: spring-k8s-efk-poc:0.0.1-SNAPSHOT
+        name: spring-k8s-efk-poc
+        lifecycle:
+          preStop:
+            exec:
+              command: [ "sh", "-c", "sleep 10" ]
+        resources:
+          requests:
+            cpu: 800m
+        ports:
+          - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /actuator/health/liveness
+            port: 8080
+          initialDelaySeconds: 300
+          timeoutSeconds: 20
+        readinessProbe:
+          httpGet:
+            path: /actuator/health/readiness
+            port: 8080
+
+

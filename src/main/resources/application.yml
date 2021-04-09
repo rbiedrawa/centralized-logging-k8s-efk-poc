@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-k8s-efk-poc
+
+server:
+  shutdown: graceful
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics,health,info,env
