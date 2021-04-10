@@ -72,7 +72,7 @@ Setup contains custom Fleuntd match and filters directives, that can be activate
 
 * Open your web browser and go to [Kibana dashboard page](http://localhost:8081/).
 
-* Click `Discover` tab and then click `Create index pattern`. 
+* Click `Discover` tab and then `Create index pattern`. 
 
 * Use `logstash*` pattern, see picture below.
   
@@ -95,9 +95,11 @@ Setup contains custom Fleuntd match and filters directives, that can be activate
 
 ## References
 
-[Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
-[Cluster-level Logging in Kubernetes with Fluentd](https://medium.com/kubernetes-tutorials/cluster-level-logging-in-kubernetes-with-fluentd-e59aa2b6093a)
-[Fluentd config - kubernetes.conf](https://github.com/fluent/fluentd-kubernetes-daemonset/blob/master/docker-image/v1.11/debian-elasticsearch7/conf/kubernetes.conf)
+* [Kubernetes DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
+
+* [Cluster-level Logging in Kubernetes with Fluentd](https://medium.com/kubernetes-tutorials/cluster-level-logging-in-kubernetes-with-fluentd-e59aa2b6093a)
+
+* [Fluentd config - kubernetes.conf](https://github.com/fluent/fluentd-kubernetes-daemonset/blob/master/docker-image/v1.11/debian-elasticsearch7/conf/kubernetes.conf)
 
 ## License
 
