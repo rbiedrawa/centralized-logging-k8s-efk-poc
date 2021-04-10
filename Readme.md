@@ -2,7 +2,7 @@
 
 This repository contains EFK (Elasticsearch, Fluentd, and Kibana) **centralized logging** setup for applications running inside **kubernetes** cluster.
 
-Setup contains custom Fleuntd match and filters directives, that can be activated using kubernetes label `logtype: "json"` (for matching json formatted logs).
+Setup contains custom Fleuntd matcher and filters directives, that can be activated using kubernetes label `logtype: "json"` (for matching json formatted logs).
 
 ## Features
 
