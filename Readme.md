@@ -8,7 +8,7 @@ Setup contains custom Fleuntd match and filters directives, that can be activate
 
 * Centralized logging inside kubernetes cluster.
 * **Elasticsearch** setup for log storage.  
-* Configured node-level logging agent - **Fluentd DaemonSet**.
+* Configured node-level logging agent (**Fluentd DaemonSet**).
 * **Kibana** setup for log visualization.
 * Sample spring boot microservice with configured logging (json format).
 * Custom **Fluentd directive** for matching containers marked with k8s `logtype=json`.
