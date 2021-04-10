@@ -68,7 +68,7 @@ Setup contains custom Fleuntd match and filters directives, that can be activate
   ```shell
   kubectl port-forward -n efk-logging svc/kibana 8081:5601
   ```
-  *** *EFK setup may take, so please be patient.*
+  *** *EFK setup may take some time, so please be patient.*
 
 * Open your web browser and go to [Kibana dashboard page](http://localhost:8081/).
 
