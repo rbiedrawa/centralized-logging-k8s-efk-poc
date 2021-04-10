@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         app: kibana
+        logtype: json
     spec:
       containers:
         - name: kibana

@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: elasticsearch
+        logtype: json
     spec:
       containers:
         - name: elasticsearch

@@ -15,6 +15,7 @@ spec:
     metadata:
       labels:
         app: spring-k8s-efk-poc
+        logtype: "json"
     spec:
       containers:
       - image: spring-k8s-efk-poc:0.0.1-SNAPSHOT
