@@ -1,6 +1,6 @@
 # Cluster-level centralized logging in Kubernetes with EFK stack (PoC)
 
-This repository contains EFK (Elasticsearch, Fluentd, and Kibana) ) **centralized logging** setup for applications running inside **kubernetes** cluster.
+This repository contains EFK (Elasticsearch, Fluentd, and Kibana) **centralized logging** setup for applications running inside **kubernetes** cluster.
 
 Setup contains custom Fleuntd match and filters directives, that can be activated using kubernetes label `logtype: "json"` (for matching json formatted logs).
 
