@@ -15,7 +15,7 @@ Setup contains custom Fleuntd matcher and filters directives, that can be activa
 
 ## Getting Started
 
-### Prerequisite
+### Prerequisites
 
 * Java 11
 * Docker
